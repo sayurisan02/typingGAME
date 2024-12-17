@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* 全体のスタイル */
+body {
+  background-color: #6edbdf6d;
+  background-size: cover;
+  font-family:"ヒラギノ丸ゴ Pro";
+}
+
+p.food img {
+  width: 200px;
+  /* height: 150px; */
+  object-fit: fill;
+}
+
+p.typing img {
+  color: #CCCCCC;
+  height: 280px;
+  width: 380px;
+  background-image: url(typing_home-position_9555-768x650.png);
+  }
+
+/* リボン */
+.ribbon {
+  font-family: 'Nixie One', cursive;
+  font-size: 20px;
+ width: 50%;
+    
+ position: relative;
+ background: #93DFB8;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 1.5em auto 1em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #7AC69F;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon-content:before, .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #60AC85 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+
+
+.heart {
+  font-size: 80px;
+  color: #f25e7e;
+  -webkit-animation: heart-beats .3s infinite alternate;
+  animation: heart-beats .3s infinite alternate;
+  transform-origin: center;
+}
+
+/* Animation Setting */
+@-webkit-keyframes heart-beats {
+  to { -webkit-transform: scale(1.1); }
+}
+@keyframes heart-beats {
+  to { transform: scale(1.1); }
+}
+
+/* Basic style */
+body {
+  text-align: center;
+}
+h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 2em;
+  color: #fd4270;
+  margin: 0%;
+} 

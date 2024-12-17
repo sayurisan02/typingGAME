@@ -1,0 +1,7 @@
+プレゼン資料がPDFじゃだめっぽい？作り直す
+テスト表未作成
+60秒で終わるようにする。スコアも出るように
+
+終わったらスターを降らせる
+
+https://q-az.net/javascript-kirakira-stars-effect/
